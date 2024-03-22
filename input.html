@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input</title>
+  </head>
+
+  <body>
+    <main>
+      <h1>Personal Information</h1>
+      <form action="main.php">
+        <div>
+          <p>Q:1 Which section do you belong?</p>
+          <label for="sectionaid">
+            <!-- for ka content or id ka content same hona chaeye -->
+            <!-- name islie same rakhte kyuke radio mai at a time ek hi baar check(tick) lgate hai -->
+            <!-- form elements ka name is lie dete hai kyu ke backend aap ke element ko is name se janega -->
+            <input
+              type="radio"
+              value="sectiona"
+              name="section"
+              id="sectionaid"
+            />Section A
+            <br />
+            <br />
+          </label>
+          <label for="sectionbid">
+            <input
+              type="radio"
+              value="sectionb"
+              name="section"
+              id="sectionbid"
+            />Section B
+            <br />
+            <br />
+          </label>
+          <label for="sectioncid">
+            <input
+              type="radio"
+              value="sectionc"
+              name="section"
+              id="sectioncid"
+            />Section C
+            <br />
+            <br />
+          </label>
+          <label for="sectiondid">
+            <input
+              type="radio"
+              value="sectiond"
+              name="section"
+              id="sectiondid"
+            />Section D
+            <br />
+            <br />
+          </label>
+        </div>
+        <div>
+          <p>Q:2 What is your profession?</p>
+          <label for="professionS">
+            <input type="radio" name="profession" id="professionS" />Software
+            Developer <br />
+            <br />
+          </label>
+          <label for="professionA">
+            <input type="radio" name="profession" id="professionA" />AI Engineer
+            <br />
+            <br />
+          </label>
+          <label for="professionD">
+            <input type="radio" name="profession" id="professionD" />Data
+            Scientist<br />
+            <br />
+          </label>
+          <label for="professionM">
+            <input type="radio" name="profession" id="professionM" />Machine
+            Learner<br />
+            <br />
+          </label>
+        </div>
+
+        <div>
+          <label for="foodcanteen">
+            <!-- classes ka ye faida hota ke jese let say 2 label ek hi class ke hai tu agr muje sab red classes ke label ka color change krna tu mai easy se khe skta ke red classes ke sb labels ka color change krdo ek label different classes se belong krskta space dete hai tu classes ka name likhne se like (red blue). id unique identifier hai wo sb ki alg hoti class same hoskti hai. -->
+            <input
+              type="checkbox"
+              name="Want Food Canteen Card"
+              id="foodcanteen"
+              class="red"
+            />
+            Want Food Canteen Card
+          </label>
+        </div>
+        <h1>Datacamp</h1>
+        <div>
+          <!-- textarea ka placeholder gaieb hojata jb text likhna start krte hai -->
+          <textarea
+            name="explain"
+            id="explain"
+            cols="30"
+            rows="10"
+            placeholder="Explain why you join?"
+          ></textarea>
+        </div>
+        <br />
+        <div>
+          <!-- select tag just like combobox ki tanha hota hai. -->
+          <select name="car" id="car">
+            <option value="default option">Select Your car</option>
+            <option value="corolla">Corolla</option>
+            <option value="prado">Prado</option>
+            <option value="toyotta V8">Toyotta V8</option>
+            <option value="mercedes">Mercedes</option>
+          </select>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
